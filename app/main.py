@@ -6,7 +6,7 @@ from prometheus_client import Counter, Histogram, Gauge, generate_latest, CONTEN
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
 
-app = FastAPI(title="TableCRM DevOps Test", version="1.0.0")
+app = FastAPI(title="FastAPI_Grafana monitoring", version="1.0.0")
 
 REQUEST_COUNT = Counter("http_requests_total","Total HTTP requests",["method","path","status"])
 REQUEST_ERRORS = Counter("http_request_errors_total","Total HTTP errors",["method","path","exception"])
